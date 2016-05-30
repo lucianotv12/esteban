@@ -2,7 +2,7 @@
 define('ROOT','localhost');
 define('DATABASE','esteban');
 define('USER','root');
-define('PASS','112233');
+define('PASS','');
 define('HOME','http://localhost/esteban/');
 define('ADMIN','http://localhost/esteban/');
 define('IMGS','http://localhost/esteban/template/img/');

@@ -52,7 +52,7 @@ class Producto
 	{//Guarda o inserta segun corresponda 
 		if ($this->id<>0) 
 			{ 
-			$query_save = "update productos set idMoneda = '$this->idMoneda', idCategoria = '$this->idCategoria', idSubCategoria = '$this->idSubCategoria', descripcion = '$this->descripcion', fechaCarga = '$this->fechaCarga', idUsuario = '$this->idUsuario', activo = '$this->activo', aviso_stock = '$this->aviso_stock', precio = '$this->precio', utilidad = '$this->utilidad', iva = '$this->iva', referencia = '$this->referencia', fechaActualizacion = '$this->fechaActualizacion', bulto = '$this->bulto', espesor = '$this->espesor', ancho = '$this->ancho' where id='$this->id'";
+			$query_save = "update productos set idMoneda = '$this->idMoneda', idCategoria = '$this->idCategoria', idSubCategoria = '$this->idSubCategoria', descripcion = '$this->descripcion', fechaCarga = '$this->fechaCarga', idUsuario = '$this->idUsuario', activo = '$this->activo', aviso_stock = '$this->aviso_stock', precio = '$this->precio', utilidad = '$this->utilidad', iva = '$this->iva', referencia = '$this->referencia', fechaActualizacion = CURDATE(), bulto = '$this->bulto', espesor = '$this->espesor', ancho = '$this->ancho' where id='$this->id'";
 			mysql_query($query_save) or die(mysql_error()); 
 			}
 		else
